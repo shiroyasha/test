@@ -16,6 +16,10 @@ blocks:
           value: Environment Variable 1
         - name: PI
           value: "3.14159"
+      secrets:
+        - name: aws-secrets
+          env_var_names:
+            - aws-id
       jobs:
       - name: Just ls
         commands:
